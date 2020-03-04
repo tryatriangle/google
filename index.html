@@ -3,10 +3,44 @@
     
     <head>
         <meta charset="utf-8">
-        <title></title>
-        <style></style>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet"> 
+        <title>Google</title>
+        <style>
+            .body {
+                font-family: "Noto Sans"; /*google font*/
+            }
+            /*top navigation bar*/
+            ul { 
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: white;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding-left: 15px;
+                font: 13px;
+
+            }            
+        </style>
     </head>
     
-    <body>
+    <body class="body">
+
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+                <li><a href="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a></li>
+                <li><a href="https://mail.google.com">Gmail</a></li>
+                <li><a href="https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+            </ul>
+        </nav>
+
     </body>
 </html>
