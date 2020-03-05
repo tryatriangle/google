@@ -11,7 +11,9 @@
             }
             /*top navigation bar*/
             .nav-bar {
-                padding:0px;
+                padding-left: 8px;
+                padding-top: 2px;
+                padding-right: 8px;
             }
             ul { 
                 list-style-type: none;
@@ -70,6 +72,22 @@
                 border-radius:25px;
                 border: 1.5px solid #E7E6E1;
             }
+            /*google search buttons*/
+            .search-buttons {
+                background-color: #E7E6E1;
+                border: none;
+                border-radius: 5px;
+                color: gray;
+                padding: 12px 32px;
+                font-size: 15px;
+            }
+            .button-align {
+                display:inline-block;
+                margin-right: 5px;
+            }
+            .search-box-div {
+                text-align: center;
+            }
         </style>
     </head>
     
@@ -85,9 +103,9 @@
 
                 <li><a href="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a></li>
 
-                <li style="float:right;"><a href="https://mail.google.com">Gmail</a></li>
-
                 <li style="float:right"><a href="https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+
+                <li style="float:right;"><a href="https://mail.google.com">Gmail</a></li>
 
 
             </ul>
@@ -100,6 +118,12 @@
             <form id="search-box">
                 <label for="google-search"></label>
                     <input class="search-box" id="name" name="name" type="text">
+                <br>
+                <div class="search-buttons-div">
+                <button class="search-buttons button-align" id="submit" type="submit">Google Search</button>
+                <button class="search-buttons button-align" id="lucky" type="lucky">I'm Feeling Lucky</button>
+                </div>
+            </form>
         </div>
 
     </body>
