@@ -50,13 +50,22 @@
             }
             /*google logo layout*/
             .google-logo-div {
-                padding-top:200px;
+                padding-top:130px;
             }
             .google-logo-img {
                 display:block;
                 margin-left:auto;
                 margin-right: auto;
             } 
+            /*google search box*/
+            .search-box-div {
+                padding-top:20px;
+            }
+            .search-box {
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         </style>
     </head>
     
@@ -64,11 +73,16 @@
 
         <nav class="nav-bar">
             <ul>
-                <li class="user-prof-pic"><img class="prof-pic-border" alt="user profile picture" src="images/user-pic.jpg"></li>
-                <li style="float:right"><img style="width:16px;height:16px;" src="images/google-buttons.png"></li>
+                <li class="user-prof-pic"><a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.co.uk%2F%3Fgws_rd%3Dssl&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img class="prof-pic-border" alt="user profile picture" src="images/user-pic.jpg"></a></li>
+
+                <li style="float:right"><a href="https://about.google/intl/en/products/?tab=wh"><img style="width:16px;height:16px;" src="images/google-buttons.png"></a></li>
+
                 <li><a href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+
                 <li><a href="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a></li>
+
                 <li style="float:right;"><a href="https://mail.google.com">Gmail</a></li>
+
                 <li style="float:right"><a href="https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl">Images</a></li>
 
 
@@ -77,6 +91,11 @@
         
         <div class="google-logo-div">
             <img class="google-logo-img" alt="the google logo" src="images/google-logo.png">
+        </div>
+        <div class="search-box-div">
+            <form id="search-box">
+                <label for="google-search"></label>
+                    <input class="search-box" id="name" name="name" type="text">
         </div>
 
     </body>
