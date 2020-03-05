@@ -27,7 +27,16 @@
                 padding-left: 15px;
                 font: 13px;
 
-            }            
+            } 
+            .prof-pic-border {
+                border-color: #ffffff;
+                border-width: 2px;
+                border-style: solid;
+                border-radius: 50%;
+            }   
+            .user-prof-pic {
+                float:right;
+            }        
         </style>
     </head>
     
@@ -35,12 +44,19 @@
 
         <nav id="nav-bar">
             <ul>
+                <li class="user-prof-pic"><img class="prof-pic-border" alt="user profile picture" src="images/user-pic.jpg"></li>
+                <li style="float:right"><img style="width:16px;height:16px;" src="images/google-buttons.png"></li>
                 <li><a href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a></li>
                 <li><a href="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a></li>
-                <li><a href="https://mail.google.com">Gmail</a></li>
-                <li><a href="https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+                <li style="float:right"><a href="https://mail.google.com">Gmail</a></li>
+                <li style="float:right"><a href="https://www.google.co.uk/imghp?hl=en&tab=wi&ogbl">Images</a></li>
+
+
             </ul>
         </nav>
+        <div id="google-logo-picture">
+            <img alt="the google logo" src="images/google-logo.png">
+        </div>
 
     </body>
 </html>
