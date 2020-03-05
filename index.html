@@ -10,6 +10,9 @@
                 font-family: "Noto Sans"; /*google font*/
             }
             /*top navigation bar*/
+            .nav-bar {
+                padding:10px;
+            }
             ul { 
                 list-style-type: none;
                 margin: 0;
@@ -28,6 +31,7 @@
                 font: 13px;
 
             } 
+            /*making profile pic round*/
             .prof-pic-border {
                 border-color: #ffffff;
                 border-width: 2px;
@@ -36,13 +40,21 @@
             }   
             .user-prof-pic {
                 float:right;
-            }        
+            }
+            /*google logo layout*/
+            .google-logo-div {
+            }
+            .google-logo-img {
+                display:block;
+                margin-left:auto;
+                margin-right: auto;
+            } 
         </style>
     </head>
     
     <body class="body">
 
-        <nav id="nav-bar">
+        <nav class="nav-bar">
             <ul>
                 <li class="user-prof-pic"><img class="prof-pic-border" alt="user profile picture" src="images/user-pic.jpg"></li>
                 <li style="float:right"><img style="width:16px;height:16px;" src="images/google-buttons.png"></li>
@@ -54,8 +66,9 @@
 
             </ul>
         </nav>
-        <div id="google-logo-picture">
-            <img alt="the google logo" src="images/google-logo.png">
+        
+        <div class="google-logo-div">
+            <img class="google-logo-img" alt="the google logo" src="images/google-logo.png">
         </div>
 
     </body>
